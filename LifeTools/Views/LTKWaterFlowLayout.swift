@@ -44,8 +44,7 @@ class LTKWaterFlowLayout: UICollectionViewFlowLayout {
             
             for index in 0...total - 1 {
                 let indexPath = NSIndexPath(forItem: index, inSection: 0)
-                let attrs = self.layoutAttributesForItemAtIndexPath(indexPath)
-                if let attr = attrs {
+                if let attr = self.layoutAttributesForItemAtIndexPath(indexPath) {
                     self.attrsArray.append(attr)
                 }
             }
