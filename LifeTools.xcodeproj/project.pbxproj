@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBA0FC5F1D52DB7D002BD1C0 /* LTKWaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0FC5E1D52DB7D002BD1C0 /* LTKWaterFlowLayout.swift */; };
+		EBA0FC631D52DF61002BD1C0 /* LTKRecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0FC621D52DF61002BD1C0 /* LTKRecipeStepCell.swift */; };
+		EBA0FC651D52DF70002BD1C0 /* LTKRecipeStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA0FC641D52DF70002BD1C0 /* LTKRecipeStepCell.xib */; };
+		EBA0FC671D52E290002BD1C0 /* LTKRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0FC661D52E290002BD1C0 /* LTKRecipeViewController.swift */; };
+		EBA0FC691D53147E002BD1C0 /* LTKStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0FC681D53147E002BD1C0 /* LTKStepViewController.swift */; };
 		EBBB54D71D504CDC008A955F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB54D61D504CDC008A955F /* AppDelegate.swift */; };
 		EBBB54D91D504CDC008A955F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB54D81D504CDC008A955F /* ViewController.swift */; };
 		EBBB54DC1D504CDC008A955F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBB54DA1D504CDC008A955F /* Main.storyboard */; };
@@ -27,7 +32,6 @@
 		EBBB55341D507A47008A955F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB55331D507A47008A955F /* libicucore.tbd */; };
 		EBBB55771D5096DB008A955F /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB551A1D507480008A955F /* YYModel.framework */; };
 		EBBB55781D5096DB008A955F /* YYModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB551A1D507480008A955F /* YYModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBBB557C1D517EF6008A955F /* LTKWaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB557B1D517EF6008A955F /* LTKWaterFlowLayout.swift */; };
 		EBBB558C1D51EEEE008A955F /* LTKCategoryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB558B1D51EEEE008A955F /* LTKCategoryResult.m */; };
 		EBBB558F1D51EF80008A955F /* LTKCookMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB558E1D51EF80008A955F /* LTKCookMenu.m */; };
 		EBBB55921D51EFBF008A955F /* LTKCookMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55911D51EFBF008A955F /* LTKCookMethod.m */; };
@@ -77,6 +81,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EBA0FC5E1D52DB7D002BD1C0 /* LTKWaterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKWaterFlowLayout.swift; sourceTree = "<group>"; };
+		EBA0FC621D52DF61002BD1C0 /* LTKRecipeStepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKRecipeStepCell.swift; sourceTree = "<group>"; };
+		EBA0FC641D52DF70002BD1C0 /* LTKRecipeStepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTKRecipeStepCell.xib; sourceTree = "<group>"; };
+		EBA0FC661D52E290002BD1C0 /* LTKRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKRecipeViewController.swift; sourceTree = "<group>"; };
+		EBA0FC681D53147E002BD1C0 /* LTKStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKStepViewController.swift; sourceTree = "<group>"; };
 		EBBB54D31D504CDC008A955F /* LifeTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBB54D61D504CDC008A955F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBB54D81D504CDC008A955F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +117,6 @@
 		EBBB55311D507A3A008A955F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		EBBB55331D507A47008A955F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		EBBB55361D507C7E008A955F /* LifeTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeTools-Bridging-Header.h"; sourceTree = "<group>"; };
-		EBBB557B1D517EF6008A955F /* LTKWaterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKWaterFlowLayout.swift; sourceTree = "<group>"; };
 		EBBB558A1D51EEEE008A955F /* LTKCategoryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCategoryResult.h; sourceTree = "<group>"; };
 		EBBB558B1D51EEEE008A955F /* LTKCategoryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCategoryResult.m; sourceTree = "<group>"; };
 		EBBB558D1D51EF80008A955F /* LTKCookMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCookMenu.h; sourceTree = "<group>"; };
@@ -161,6 +169,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBA0FC5D1D52DB5D002BD1C0 /* CollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EBA0FC5E1D52DB7D002BD1C0 /* LTKWaterFlowLayout.swift */,
+			);
+			path = CollectionLayout;
+			sourceTree = "<group>";
+		};
+		EBA0FC6A1D5319E0002BD1C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		EBBB54CA1D504CDC008A955F = {
 			isa = PBXGroup;
 			children = (
@@ -310,7 +333,8 @@
 		EBBB557A1D517EC2008A955F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EBBB557B1D517EF6008A955F /* LTKWaterFlowLayout.swift */,
+				EBA0FC6A1D5319E0002BD1C0 /* Storyboards */,
+				EBA0FC5D1D52DB5D002BD1C0 /* CollectionLayout */,
 				EBBB55851D51DA2B008A955F /* Xibs */,
 			);
 			path = Views;
@@ -337,6 +361,8 @@
 			children = (
 				EBBB559A1D51F479008A955F /* LTKCategoryDetailViewController.swift */,
 				EBBB559C1D51F4E6008A955F /* LTKMenusViewController.swift */,
+				EBA0FC661D52E290002BD1C0 /* LTKRecipeViewController.swift */,
+				EBA0FC681D53147E002BD1C0 /* LTKStepViewController.swift */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -348,6 +374,8 @@
 				EBBB55A01D51F5CE008A955F /* LTKCotegoryCell.xib */,
 				EBBB55A51D51F5F8008A955F /* LTKMenuCell.swift */,
 				EBBB55A31D51F5DF008A955F /* LTKMenuCell.xib */,
+				EBA0FC621D52DF61002BD1C0 /* LTKRecipeStepCell.swift */,
+				EBA0FC641D52DF70002BD1C0 /* LTKRecipeStepCell.xib */,
 			);
 			path = Cook;
 			sourceTree = "<group>";
@@ -460,6 +488,7 @@
 				EBBB54E11D504CDC008A955F /* LaunchScreen.storyboard in Resources */,
 				EBBB55201D5074AA008A955F /* MobAPI.bundle in Resources */,
 				EBBB55A21D51F5CE008A955F /* LTKCotegoryCell.xib in Resources */,
+				EBA0FC651D52DF70002BD1C0 /* LTKRecipeStepCell.xib in Resources */,
 				EBBB54DE1D504CDC008A955F /* Assets.xcassets in Resources */,
 				EBBB55A41D51F5DF008A955F /* LTKMenuCell.xib in Resources */,
 				EBBB54DC1D504CDC008A955F /* Main.storyboard in Resources */,
@@ -490,14 +519,17 @@
 				EBBB55A61D51F5F8008A955F /* LTKMenuCell.swift in Sources */,
 				EBBB55A11D51F5CE008A955F /* LTKCategoryCell.swift in Sources */,
 				EBBB558F1D51EF80008A955F /* LTKCookMenu.m in Sources */,
+				EBA0FC671D52E290002BD1C0 /* LTKRecipeViewController.swift in Sources */,
+				EBA0FC631D52DF61002BD1C0 /* LTKRecipeStepCell.swift in Sources */,
 				EBBB55181D50730F008A955F /* LTKCookResult.m in Sources */,
 				EBBB55291D5076A6008A955F /* LTKCookAPIManager.m in Sources */,
-				EBBB557C1D517EF6008A955F /* LTKWaterFlowLayout.swift in Sources */,
 				EBBB552C1D507730008A955F /* LTKAPIManager.m in Sources */,
 				EBBB55981D51F2DE008A955F /* LTKAPIResponse.m in Sources */,
 				EBBB558C1D51EEEE008A955F /* LTKCategoryResult.m in Sources */,
 				EBBB55091D50585A008A955F /* LTKConstants.swift in Sources */,
 				EBBB559D1D51F4E6008A955F /* LTKMenusViewController.swift in Sources */,
+				EBA0FC691D53147E002BD1C0 /* LTKStepViewController.swift in Sources */,
+				EBA0FC5F1D52DB7D002BD1C0 /* LTKWaterFlowLayout.swift in Sources */,
 				EBBB54D91D504CDC008A955F /* ViewController.swift in Sources */,
 				EBBB559B1D51F479008A955F /* LTKCategoryDetailViewController.swift in Sources */,
 				EBBB54D71D504CDC008A955F /* AppDelegate.swift in Sources */,

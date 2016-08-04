@@ -11,10 +11,10 @@
 
 @interface LTKCookRecipe : NSObject
 
-@property (nonatomic, copy) NSString                        *img;
-@property (nonatomic, copy) NSArray<LTKCookMethod *>        *method;
-@property (nonatomic, copy) NSString                        *ingredients;
-@property (nonatomic, copy) NSString                        *title;
-@property (nonatomic, copy) NSString                        *sumary;
+@property (nonatomic, copy, nullable) NSString                  *img;
+@property (nonatomic, copy, nullable) NSArray<LTKCookMethod *>  *method;
+@property (nonatomic, copy, nullable) NSString                  *ingredients;
+@property (nonatomic, copy, nullable) NSString                  *title;
+@property (nonatomic, copy, nullable) NSString                  *sumary;
 
 @end

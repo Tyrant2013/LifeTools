@@ -10,7 +10,7 @@
 
 @interface LTKCookMethod : NSObject
 
-@property (nonatomic, copy) NSString                        *img;
-@property (nonatomic, strong) NSString                      *step;
+@property (nonatomic, copy, nullable) NSString              *img;
+@property (nonatomic, strong, nonnull) NSString             *step;
 
 @end

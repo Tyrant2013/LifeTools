@@ -11,11 +11,11 @@
 
 @interface LTKCookMenu : NSObject
 
-@property (nonatomic, copy) NSArray<NSString *>             *ctgIds;
-@property (nonatomic, copy) NSString                        *ctgTitles;
-@property (nonatomic, strong) LTKCookRecipe                 *recipe;
-@property (nonatomic, copy) NSString                        *menuId;
-@property (nonatomic, copy) NSString                        *name;
-@property (nonatomic, copy) NSString                        *thumbnail;
+@property (nonatomic, copy, nonnull) NSArray<NSString *>    *ctgIds;
+@property (nonatomic, copy, nonnull) NSString               *ctgTitles;
+@property (nonatomic, strong, nonnull) LTKCookRecipe        *recipe;
+@property (nonatomic, copy, nonnull) NSString               *menuId;
+@property (nonatomic, copy, nonnull) NSString               *name;
+@property (nonatomic, copy, nullable) NSString              *thumbnail;
 
 @end

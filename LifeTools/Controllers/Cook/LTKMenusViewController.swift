@@ -20,7 +20,11 @@ class LTKMenusViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-         self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = false
+        let layout = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        let width = CGRectGetWidth(UIScreen.mainScreen().bounds)
+        let itemWidth = (width - layout.minimumLineSpacing - layout.sectionInset.left - layout.sectionInset.right) / 2.0
+        layout.itemSize = CGSize(width: itemWidth, height: 150.0)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -39,15 +43,17 @@ class LTKMenusViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        let destViewController = segue.destinationViewController as! LTKRecipeViewController
+        let cell = sender as! LTKMenuCell
+        if let indexPath = self.collectionView?.indexPathForCell(cell) {
+            let menu = self.dataSource[indexPath.row]
+            destViewController.configRecipeData(menu.recipe)
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -60,7 +66,9 @@ class LTKMenusViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as!  LTKMenuCell
         let item = self.dataSource[indexPath.row]
         cell.title?.text = item.name
-        cell.imageView?.sd_setImageWithURL(NSURL(string: item.thumbnail))
+        if let img = item.thumbnail {
+            cell.imageView?.sd_setImageWithURL(NSURL(string: img))
+        }
         return cell
     }
     
