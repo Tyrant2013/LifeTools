@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBBB54D71D504CDC008A955F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB54D61D504CDC008A955F /* AppDelegate.swift */; };
+		EBBB54D91D504CDC008A955F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB54D81D504CDC008A955F /* ViewController.swift */; };
+		EBBB54DC1D504CDC008A955F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBB54DA1D504CDC008A955F /* Main.storyboard */; };
+		EBBB54DE1D504CDC008A955F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBB54DD1D504CDC008A955F /* Assets.xcassets */; };
+		EBBB54E11D504CDC008A955F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBB54DF1D504CDC008A955F /* LaunchScreen.storyboard */; };
+		EBBB54EC1D504CDC008A955F /* LifeToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB54EB1D504CDC008A955F /* LifeToolsTests.swift */; };
+		EBBB54F71D504CDC008A955F /* LifeToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB54F61D504CDC008A955F /* LifeToolsUITests.swift */; };
+		EBBB55091D50585A008A955F /* LTKConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55081D50585A008A955F /* LTKConstants.swift */; };
+		EBBB55111D505EAC008A955F /* LTKCookCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55101D505EAC008A955F /* LTKCookCategory.m */; };
+		EBBB55181D50730F008A955F /* LTKCookResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55171D50730F008A955F /* LTKCookResult.m */; };
+		EBBB55201D5074AA008A955F /* MobAPI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBBB551D1D5074AA008A955F /* MobAPI.bundle */; };
+		EBBB55221D5074AA008A955F /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB551F1D5074AA008A955F /* MOBFoundation.framework */; };
+		EBBB55291D5076A6008A955F /* LTKCookAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55281D5076A6008A955F /* LTKCookAPIManager.m */; };
+		EBBB552C1D507730008A955F /* LTKAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB552B1D507730008A955F /* LTKAPIManager.m */; };
+		EBBB552E1D507A1B008A955F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB552D1D507A1B008A955F /* JavaScriptCore.framework */; };
+		EBBB55301D507A31008A955F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB552F1D507A31008A955F /* libstdc++.tbd */; };
+		EBBB55321D507A3A008A955F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB55311D507A3A008A955F /* libz.tbd */; };
+		EBBB55341D507A47008A955F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB55331D507A47008A955F /* libicucore.tbd */; };
+		EBBB55771D5096DB008A955F /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB551A1D507480008A955F /* YYModel.framework */; };
+		EBBB55781D5096DB008A955F /* YYModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB551A1D507480008A955F /* YYModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBBB557C1D517EF6008A955F /* LTKWaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB557B1D517EF6008A955F /* LTKWaterFlowLayout.swift */; };
+		EBBB558C1D51EEEE008A955F /* LTKCategoryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB558B1D51EEEE008A955F /* LTKCategoryResult.m */; };
+		EBBB558F1D51EF80008A955F /* LTKCookMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB558E1D51EF80008A955F /* LTKCookMenu.m */; };
+		EBBB55921D51EFBF008A955F /* LTKCookMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55911D51EFBF008A955F /* LTKCookMethod.m */; };
+		EBBB55951D51F07C008A955F /* LTKCookRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55941D51F07C008A955F /* LTKCookRecipe.m */; };
+		EBBB55981D51F2DE008A955F /* LTKAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55971D51F2DE008A955F /* LTKAPIResponse.m */; };
+		EBBB559B1D51F479008A955F /* LTKCategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB559A1D51F479008A955F /* LTKCategoryDetailViewController.swift */; };
+		EBBB559D1D51F4E6008A955F /* LTKMenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB559C1D51F4E6008A955F /* LTKMenusViewController.swift */; };
+		EBBB55A11D51F5CE008A955F /* LTKCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB559F1D51F5CE008A955F /* LTKCategoryCell.swift */; };
+		EBBB55A21D51F5CE008A955F /* LTKCotegoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB55A01D51F5CE008A955F /* LTKCotegoryCell.xib */; };
+		EBBB55A41D51F5DF008A955F /* LTKMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB55A31D51F5DF008A955F /* LTKMenuCell.xib */; };
+		EBBB55A61D51F5F8008A955F /* LTKMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB55A51D51F5F8008A955F /* LTKMenuCell.swift */; };
+		EBBB55AA1D52D117008A955F /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB55A71D52D095008A955F /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBBB55AB1D52D16A008A955F /* MobAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB551E1D5074AA008A955F /* MobAPI.framework */; };
+		EBBB55AC1D52D1BE008A955F /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBB55A71D52D095008A955F /* WebImage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBBB54E81D504CDC008A955F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBBB54CB1D504CDC008A955F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBBB54D21D504CDC008A955F;
+			remoteInfo = LifeTools;
+		};
+		EBBB54F31D504CDC008A955F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBBB54CB1D504CDC008A955F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBBB54D21D504CDC008A955F;
+			remoteInfo = LifeTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBBB55791D5096DB008A955F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBBB55781D5096DB008A955F /* YYModel.framework in Embed Frameworks */,
+				EBBB55AA1D52D117008A955F /* WebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EBBB54D31D504CDC008A955F /* LifeTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBB54D61D504CDC008A955F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBBB54D81D504CDC008A955F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBBB54DB1D504CDC008A955F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBBB54DD1D504CDC008A955F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBBB54E01D504CDC008A955F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBBB54E21D504CDC008A955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBB54E71D504CDC008A955F /* LifeToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBB54EB1D504CDC008A955F /* LifeToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeToolsTests.swift; sourceTree = "<group>"; };
+		EBBB54ED1D504CDC008A955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBB54F21D504CDC008A955F /* LifeToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBB54F61D504CDC008A955F /* LifeToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeToolsUITests.swift; sourceTree = "<group>"; };
+		EBBB54F81D504CDC008A955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBB55081D50585A008A955F /* LTKConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKConstants.swift; sourceTree = "<group>"; };
+		EBBB550F1D505EAC008A955F /* LTKCookCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCookCategory.h; sourceTree = "<group>"; };
+		EBBB55101D505EAC008A955F /* LTKCookCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCookCategory.m; sourceTree = "<group>"; };
+		EBBB55161D50730F008A955F /* LTKCookResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCookResult.h; sourceTree = "<group>"; };
+		EBBB55171D50730F008A955F /* LTKCookResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCookResult.m; sourceTree = "<group>"; };
+		EBBB551A1D507480008A955F /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/YYModel.framework; sourceTree = "<group>"; };
+		EBBB551D1D5074AA008A955F /* MobAPI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobAPI.bundle; sourceTree = "<group>"; };
+		EBBB551E1D5074AA008A955F /* MobAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobAPI.framework; sourceTree = "<group>"; };
+		EBBB551F1D5074AA008A955F /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		EBBB55271D5076A6008A955F /* LTKCookAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCookAPIManager.h; sourceTree = "<group>"; };
+		EBBB55281D5076A6008A955F /* LTKCookAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCookAPIManager.m; sourceTree = "<group>"; };
+		EBBB552A1D507730008A955F /* LTKAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKAPIManager.h; sourceTree = "<group>"; };
+		EBBB552B1D507730008A955F /* LTKAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKAPIManager.m; sourceTree = "<group>"; };
+		EBBB552D1D507A1B008A955F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EBBB552F1D507A31008A955F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		EBBB55311D507A3A008A955F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EBBB55331D507A47008A955F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		EBBB55361D507C7E008A955F /* LifeTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeTools-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBBB557B1D517EF6008A955F /* LTKWaterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKWaterFlowLayout.swift; sourceTree = "<group>"; };
+		EBBB558A1D51EEEE008A955F /* LTKCategoryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCategoryResult.h; sourceTree = "<group>"; };
+		EBBB558B1D51EEEE008A955F /* LTKCategoryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCategoryResult.m; sourceTree = "<group>"; };
+		EBBB558D1D51EF80008A955F /* LTKCookMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCookMenu.h; sourceTree = "<group>"; };
+		EBBB558E1D51EF80008A955F /* LTKCookMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCookMenu.m; sourceTree = "<group>"; };
+		EBBB55901D51EFBF008A955F /* LTKCookMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCookMethod.h; sourceTree = "<group>"; };
+		EBBB55911D51EFBF008A955F /* LTKCookMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCookMethod.m; sourceTree = "<group>"; };
+		EBBB55931D51F07C008A955F /* LTKCookRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKCookRecipe.h; sourceTree = "<group>"; };
+		EBBB55941D51F07C008A955F /* LTKCookRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKCookRecipe.m; sourceTree = "<group>"; };
+		EBBB55961D51F2DE008A955F /* LTKAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKAPIResponse.h; sourceTree = "<group>"; };
+		EBBB55971D51F2DE008A955F /* LTKAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTKAPIResponse.m; sourceTree = "<group>"; };
+		EBBB559A1D51F479008A955F /* LTKCategoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKCategoryDetailViewController.swift; sourceTree = "<group>"; };
+		EBBB559C1D51F4E6008A955F /* LTKMenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKMenusViewController.swift; sourceTree = "<group>"; };
+		EBBB559F1D51F5CE008A955F /* LTKCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKCategoryCell.swift; sourceTree = "<group>"; };
+		EBBB55A01D51F5CE008A955F /* LTKCotegoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTKCotegoryCell.xib; sourceTree = "<group>"; };
+		EBBB55A31D51F5DF008A955F /* LTKMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTKMenuCell.xib; sourceTree = "<group>"; };
+		EBBB55A51D51F5F8008A955F /* LTKMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTKMenuCell.swift; sourceTree = "<group>"; };
+		EBBB55A71D52D095008A955F /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBBB54D01D504CDC008A955F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB55AC1D52D1BE008A955F /* WebImage.framework in Frameworks */,
+				EBBB55AB1D52D16A008A955F /* MobAPI.framework in Frameworks */,
+				EBBB55771D5096DB008A955F /* YYModel.framework in Frameworks */,
+				EBBB55341D507A47008A955F /* libicucore.tbd in Frameworks */,
+				EBBB55321D507A3A008A955F /* libz.tbd in Frameworks */,
+				EBBB55301D507A31008A955F /* libstdc++.tbd in Frameworks */,
+				EBBB552E1D507A1B008A955F /* JavaScriptCore.framework in Frameworks */,
+				EBBB55221D5074AA008A955F /* MOBFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB54E41D504CDC008A955F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB54EF1D504CDC008A955F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBBB54CA1D504CDC008A955F = {
+			isa = PBXGroup;
+			children = (
+				EBBB55351D507A7A008A955F /* Frameworks */,
+				EBBB55191D507474008A955F /* Carthages */,
+				EBBB55041D505518008A955F /* ThirdParty */,
+				EBBB54D51D504CDC008A955F /* LifeTools */,
+				EBBB54EA1D504CDC008A955F /* LifeToolsTests */,
+				EBBB54F51D504CDC008A955F /* LifeToolsUITests */,
+				EBBB54D41D504CDC008A955F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBBB54D41D504CDC008A955F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB54D31D504CDC008A955F /* LifeTools.app */,
+				EBBB54E71D504CDC008A955F /* LifeToolsTests.xctest */,
+				EBBB54F21D504CDC008A955F /* LifeToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBBB54D51D504CDC008A955F /* LifeTools */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB55241D5074ED008A955F /* APITools */,
+				EBBB557F1D51D8A1008A955F /* Controllers */,
+				EBBB557A1D517EC2008A955F /* Views */,
+				EBBB55081D50585A008A955F /* LTKConstants.swift */,
+				EBBB55361D507C7E008A955F /* LifeTools-Bridging-Header.h */,
+				EBBB55071D5055AE008A955F /* Models */,
+				EBBB55231D5074DA008A955F /* ViewModels */,
+				EBBB54D61D504CDC008A955F /* AppDelegate.swift */,
+				EBBB54D81D504CDC008A955F /* ViewController.swift */,
+				EBBB54DA1D504CDC008A955F /* Main.storyboard */,
+				EBBB54DD1D504CDC008A955F /* Assets.xcassets */,
+				EBBB54DF1D504CDC008A955F /* LaunchScreen.storyboard */,
+				EBBB54E21D504CDC008A955F /* Info.plist */,
+			);
+			path = LifeTools;
+			sourceTree = "<group>";
+		};
+		EBBB54EA1D504CDC008A955F /* LifeToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB54EB1D504CDC008A955F /* LifeToolsTests.swift */,
+				EBBB54ED1D504CDC008A955F /* Info.plist */,
+			);
+			path = LifeToolsTests;
+			sourceTree = "<group>";
+		};
+		EBBB54F51D504CDC008A955F /* LifeToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB54F61D504CDC008A955F /* LifeToolsUITests.swift */,
+				EBBB54F81D504CDC008A955F /* Info.plist */,
+			);
+			path = LifeToolsUITests;
+			sourceTree = "<group>";
+		};
+		EBBB55041D505518008A955F /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB551C1D5074AA008A955F /* MobAPI */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		EBBB55071D5055AE008A955F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB55151D5072D0008A955F /* APIModel */,
+				EBBB550F1D505EAC008A955F /* LTKCookCategory.h */,
+				EBBB55101D505EAC008A955F /* LTKCookCategory.m */,
+				EBBB558D1D51EF80008A955F /* LTKCookMenu.h */,
+				EBBB558E1D51EF80008A955F /* LTKCookMenu.m */,
+				EBBB55931D51F07C008A955F /* LTKCookRecipe.h */,
+				EBBB55941D51F07C008A955F /* LTKCookRecipe.m */,
+				EBBB55901D51EFBF008A955F /* LTKCookMethod.h */,
+				EBBB55911D51EFBF008A955F /* LTKCookMethod.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBBB55151D5072D0008A955F /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB55961D51F2DE008A955F /* LTKAPIResponse.h */,
+				EBBB55971D51F2DE008A955F /* LTKAPIResponse.m */,
+				EBBB55161D50730F008A955F /* LTKCookResult.h */,
+				EBBB55171D50730F008A955F /* LTKCookResult.m */,
+				EBBB558A1D51EEEE008A955F /* LTKCategoryResult.h */,
+				EBBB558B1D51EEEE008A955F /* LTKCategoryResult.m */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
+		EBBB55191D507474008A955F /* Carthages */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB55A71D52D095008A955F /* WebImage.framework */,
+				EBBB551A1D507480008A955F /* YYModel.framework */,
+			);
+			name = Carthages;
+			sourceTree = "<group>";
+		};
+		EBBB551C1D5074AA008A955F /* MobAPI */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB551D1D5074AA008A955F /* MobAPI.bundle */,
+				EBBB551E1D5074AA008A955F /* MobAPI.framework */,
+				EBBB551F1D5074AA008A955F /* MOBFoundation.framework */,
+			);
+			path = MobAPI;
+			sourceTree = "<group>";
+		};
+		EBBB55231D5074DA008A955F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EBBB55241D5074ED008A955F /* APITools */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB552A1D507730008A955F /* LTKAPIManager.h */,
+				EBBB552B1D507730008A955F /* LTKAPIManager.m */,
+				EBBB55271D5076A6008A955F /* LTKCookAPIManager.h */,
+				EBBB55281D5076A6008A955F /* LTKCookAPIManager.m */,
+			);
+			path = APITools;
+			sourceTree = "<group>";
+		};
+		EBBB55351D507A7A008A955F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB55331D507A47008A955F /* libicucore.tbd */,
+				EBBB55311D507A3A008A955F /* libz.tbd */,
+				EBBB552F1D507A31008A955F /* libstdc++.tbd */,
+				EBBB552D1D507A1B008A955F /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBBB557A1D517EC2008A955F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB557B1D517EF6008A955F /* LTKWaterFlowLayout.swift */,
+				EBBB55851D51DA2B008A955F /* Xibs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBBB557F1D51D8A1008A955F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB55991D51F453008A955F /* Cook */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EBBB55851D51DA2B008A955F /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB559E1D51F5B6008A955F /* Cook */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		EBBB55991D51F453008A955F /* Cook */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB559A1D51F479008A955F /* LTKCategoryDetailViewController.swift */,
+				EBBB559C1D51F4E6008A955F /* LTKMenusViewController.swift */,
+			);
+			path = Cook;
+			sourceTree = "<group>";
+		};
+		EBBB559E1D51F5B6008A955F /* Cook */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB559F1D51F5CE008A955F /* LTKCategoryCell.swift */,
+				EBBB55A01D51F5CE008A955F /* LTKCotegoryCell.xib */,
+				EBBB55A51D51F5F8008A955F /* LTKMenuCell.swift */,
+				EBBB55A31D51F5DF008A955F /* LTKMenuCell.xib */,
+			);
+			path = Cook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBBB54D21D504CDC008A955F /* LifeTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBB54FB1D504CDC008A955F /* Build configuration list for PBXNativeTarget "LifeTools" */;
+			buildPhases = (
+				EBBB54CF1D504CDC008A955F /* Sources */,
+				EBBB54D01D504CDC008A955F /* Frameworks */,
+				EBBB54D11D504CDC008A955F /* Resources */,
+				EBBB55791D5096DB008A955F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeTools;
+			productName = LifeTools;
+			productReference = EBBB54D31D504CDC008A955F /* LifeTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBBB54E61D504CDC008A955F /* LifeToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBB54FE1D504CDC008A955F /* Build configuration list for PBXNativeTarget "LifeToolsTests" */;
+			buildPhases = (
+				EBBB54E31D504CDC008A955F /* Sources */,
+				EBBB54E41D504CDC008A955F /* Frameworks */,
+				EBBB54E51D504CDC008A955F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBBB54E91D504CDC008A955F /* PBXTargetDependency */,
+			);
+			name = LifeToolsTests;
+			productName = LifeToolsTests;
+			productReference = EBBB54E71D504CDC008A955F /* LifeToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBBB54F11D504CDC008A955F /* LifeToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBB55011D504CDC008A955F /* Build configuration list for PBXNativeTarget "LifeToolsUITests" */;
+			buildPhases = (
+				EBBB54EE1D504CDC008A955F /* Sources */,
+				EBBB54EF1D504CDC008A955F /* Frameworks */,
+				EBBB54F01D504CDC008A955F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBBB54F41D504CDC008A955F /* PBXTargetDependency */,
+			);
+			name = LifeToolsUITests;
+			productName = LifeToolsUITests;
+			productReference = EBBB54F21D504CDC008A955F /* LifeToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBBB54CB1D504CDC008A955F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Zhuang Xiaowei";
+				TargetAttributes = {
+					EBBB54D21D504CDC008A955F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EBBB54E61D504CDC008A955F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EBBB54D21D504CDC008A955F;
+					};
+					EBBB54F11D504CDC008A955F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EBBB54D21D504CDC008A955F;
+					};
+				};
+			};
+			buildConfigurationList = EBBB54CE1D504CDC008A955F /* Build configuration list for PBXProject "LifeTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBBB54CA1D504CDC008A955F;
+			productRefGroup = EBBB54D41D504CDC008A955F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBBB54D21D504CDC008A955F /* LifeTools */,
+				EBBB54E61D504CDC008A955F /* LifeToolsTests */,
+				EBBB54F11D504CDC008A955F /* LifeToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBBB54D11D504CDC008A955F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB54E11D504CDC008A955F /* LaunchScreen.storyboard in Resources */,
+				EBBB55201D5074AA008A955F /* MobAPI.bundle in Resources */,
+				EBBB55A21D51F5CE008A955F /* LTKCotegoryCell.xib in Resources */,
+				EBBB54DE1D504CDC008A955F /* Assets.xcassets in Resources */,
+				EBBB55A41D51F5DF008A955F /* LTKMenuCell.xib in Resources */,
+				EBBB54DC1D504CDC008A955F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB54E51D504CDC008A955F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB54F01D504CDC008A955F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBBB54CF1D504CDC008A955F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB55A61D51F5F8008A955F /* LTKMenuCell.swift in Sources */,
+				EBBB55A11D51F5CE008A955F /* LTKCategoryCell.swift in Sources */,
+				EBBB558F1D51EF80008A955F /* LTKCookMenu.m in Sources */,
+				EBBB55181D50730F008A955F /* LTKCookResult.m in Sources */,
+				EBBB55291D5076A6008A955F /* LTKCookAPIManager.m in Sources */,
+				EBBB557C1D517EF6008A955F /* LTKWaterFlowLayout.swift in Sources */,
+				EBBB552C1D507730008A955F /* LTKAPIManager.m in Sources */,
+				EBBB55981D51F2DE008A955F /* LTKAPIResponse.m in Sources */,
+				EBBB558C1D51EEEE008A955F /* LTKCategoryResult.m in Sources */,
+				EBBB55091D50585A008A955F /* LTKConstants.swift in Sources */,
+				EBBB559D1D51F4E6008A955F /* LTKMenusViewController.swift in Sources */,
+				EBBB54D91D504CDC008A955F /* ViewController.swift in Sources */,
+				EBBB559B1D51F479008A955F /* LTKCategoryDetailViewController.swift in Sources */,
+				EBBB54D71D504CDC008A955F /* AppDelegate.swift in Sources */,
+				EBBB55921D51EFBF008A955F /* LTKCookMethod.m in Sources */,
+				EBBB55111D505EAC008A955F /* LTKCookCategory.m in Sources */,
+				EBBB55951D51F07C008A955F /* LTKCookRecipe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB54E31D504CDC008A955F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB54EC1D504CDC008A955F /* LifeToolsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB54EE1D504CDC008A955F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB54F71D504CDC008A955F /* LifeToolsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBBB54E91D504CDC008A955F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBBB54D21D504CDC008A955F /* LifeTools */;
+			targetProxy = EBBB54E81D504CDC008A955F /* PBXContainerItemProxy */;
+		};
+		EBBB54F41D504CDC008A955F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBBB54D21D504CDC008A955F /* LifeTools */;
+			targetProxy = EBBB54F31D504CDC008A955F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBBB54DA1D504CDC008A955F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBBB54DB1D504CDC008A955F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBBB54DF1D504CDC008A955F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBBB54E01D504CDC008A955F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBBB54F91D504CDC008A955F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBBB54FA1D504CDC008A955F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBBB54FC1D504CDC008A955F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ThirdParty/MobAPI",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = LifeTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.LifeTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeTools/LifeTools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBBB54FD1D504CDC008A955F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ThirdParty/MobAPI",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = LifeTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.LifeTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeTools/LifeTools-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EBBB54FF1D504CDC008A955F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.LifeToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeTools.app/LifeTools";
+			};
+			name = Debug;
+		};
+		EBBB55001D504CDC008A955F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.LifeToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeTools.app/LifeTools";
+			};
+			name = Release;
+		};
+		EBBB55021D504CDC008A955F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.LifeToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeTools;
+			};
+			name = Debug;
+		};
+		EBBB55031D504CDC008A955F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.tools.LifeToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBBB54CE1D504CDC008A955F /* Build configuration list for PBXProject "LifeTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB54F91D504CDC008A955F /* Debug */,
+				EBBB54FA1D504CDC008A955F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBB54FB1D504CDC008A955F /* Build configuration list for PBXNativeTarget "LifeTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB54FC1D504CDC008A955F /* Debug */,
+				EBBB54FD1D504CDC008A955F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBB54FE1D504CDC008A955F /* Build configuration list for PBXNativeTarget "LifeToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB54FF1D504CDC008A955F /* Debug */,
+				EBBB55001D504CDC008A955F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBB55011D504CDC008A955F /* Build configuration list for PBXNativeTarget "LifeToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB55021D504CDC008A955F /* Debug */,
+				EBBB55031D504CDC008A955F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBBB54CB1D504CDC008A955F /* Project object */;
+}
